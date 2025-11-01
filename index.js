@@ -61,12 +61,14 @@ const enableBoxes = () => {
     for( let box of boxes){
         box.disabled = false;
         box.innerText = "";
+        winnerMsg.innerText = "";
     }
 }
 
 const restGame = () =>{
     turnO = true;
     enableBoxes();
+    winnerMsg.innerText = "";
 }
 
 newGame.addEventListener("click",enableBoxes);
